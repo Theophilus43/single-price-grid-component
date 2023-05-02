@@ -1,0 +1,155 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Cyan: hsl(179, 49%, 54%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --Grayish: hsl(217, 27%, 88%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 4em 2em 1em 2em;
+}
+
+
+h4{
+    padding: 1em 0 1.5em 1em;
+    color: var(--Cyan);
+    letter-spacing: 0.12em;
+}
+
+.sub{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.us{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+h5{
+    padding: 0 0 1.5em 1em;
+    color: var(--Bright-Yellow);
+    line-height: 1.5em;
+}
+
+p{
+    padding: 0 0 1.5em 1em;
+    line-height: 1.5em;
+    width: 90%;
+    font-weight: 100;
+}
+
+.full{
+    line-height: 2em;
+    padding-bottom: 0;
+    color: var(--Grayish);
+}
+
+.dollar{
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 0.4em; 
+    color: white;
+    letter-spacing: .1em;
+}
+
+.per{
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    color: var(--Light-Gray);
+}
+
+.tutor{
+    width: 70%;
+    color: var(--Grayish);
+}
+
+
+.join{
+    background-color: white;
+    color: var(--Grayish-Blue);
+    padding-left: 0.8em;
+    padding-bottom: .5em;
+    border-radius: 6px 6px 0 0;
+}
+
+.monthly-sub{
+    background-color: var(--Cyan);
+    color: var(--Light-Gray);
+    display: grid;
+    gap: 1em;
+    padding-left: 0.8em;;
+}
+
+.tutorials{
+    background-color: var(--Bright-Cyan);
+    color: var(--Light-Gray);
+    padding-left: 0.8em;
+    border-radius: 0 0 6px 6px;
+}
+
+.button{
+   cursor: pointer;
+   margin: 0 2em 2em 1em; 
+   text-decoration: none;
+   border: none;
+   border-radius: 6px;
+   padding: 1em;
+   max-width: 398px;
+   background-color: var(--Bright-Yellow);
+   color: white;
+   font-weight: 300;
+   font-size: 18px;
+}
+
+.button:is(:hover, :focus) {
+    background-color: var(--Grayish-Blue);
+}
+
+@media (min-width: 460px) {
+
+    .container{
+        max-width: 686px;
+        width: 90%;
+        margin: 4em auto 0 auto;
+        padding-top: 4em; 
+    }
+
+    .sub-container{
+        display: flex;
+
+    }
+    .monthly-sub{
+        width: 50%;
+        border-radius: 0 0 0 6px
+    }
+
+    .tutorials{
+        width: 50%;
+        border-radius: 0 0 6px 0;
+    }
+}
+    
